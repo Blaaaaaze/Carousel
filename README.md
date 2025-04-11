@@ -5,14 +5,17 @@
 ### 1. Клонирование репозитория
 
 ```bash
-git clone https://github.com/Blaaaaaze/Carouse.git
+git clone https://github.com/Blaaaaaze/Carousel.git
 cd Carousel
 ```
 ### 2. Установка зависимостей
 
 ```bach
 npm install
-# или, если используете yarn:
+```
+
+или, если используете yarn:
+```bach
 # yarn install
 ```
 
@@ -20,7 +23,9 @@ npm install
 
 ```bash
 npm start
-# или
+```
+или
+```bach
 # yarn start
 ```
 
