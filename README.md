@@ -16,7 +16,7 @@ npm install
 
 или, если используете yarn:
 ```bach
-# yarn install
+yarn install
 ```
 
 ### 3. Запуск приложения
@@ -26,7 +26,7 @@ npm start
 ```
 или
 ```bach
-# yarn start
+yarn start
 ```
 
 Приложение будет доступно по адресу http://localhost:3000
