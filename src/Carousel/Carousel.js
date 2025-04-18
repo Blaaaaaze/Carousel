@@ -12,7 +12,8 @@ export const Carousel = ({children}) => {
 
     const [pages, setPages] = useState([])
     const [offset, setOffset] = useState(0)
-    const [isPlaying, setIsPlaying] = useState(false);
+    const [isPlaying, setIsPlaying] = useState(false)
+    
     const handleBackClick = () => {
         setOffset((currentOffset) => {
             
@@ -52,15 +53,11 @@ export const Carousel = ({children}) => {
         setPages(
             Children.map(children, child => {
                 return cloneElement(child, {
-                    style: {
-                        height: '100%',
-                        minWidth: `${PAGE_WIDTH}px`,
-                        maxWidth: `${PAGE_WIDTH}px`,
-                    }
+                    className: `${child.props.className || ''} carousel-page`.trim(),
                 })
             })
         )
-    }, [])
+    }, [children])
 
 
     return (
@@ -68,9 +65,7 @@ export const Carousel = ({children}) => {
             <div className="main-container">
                 <div className="window">
                     <div className="all-pages-container" 
-                    style={{
-                        transform: `translateX(${offset}px)`
-                    }}
+                    style={{ '--offset': `${offset}px` }}
                     >
                         {pages}
                     </div>

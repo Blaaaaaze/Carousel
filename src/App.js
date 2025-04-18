@@ -8,9 +8,9 @@ import capy3 from './img/capy3.jpg'
 function App() {
   return (
     <Carousel>
-      <div className='item item-1'><img src={capy1} style={{height: '100%', width: '100%'}}></img></div>
-      <div className='item item-2'><img src={capy2} style={{height: '100%', width: '100%'}}></img></div>
-      <div className='item item-3'><img src={capy3} style={{height: '100%', width: '100%'}}></img></div>
+      <div className='item'><img src={capy1} alt='capy 1'></img></div>
+      <div className='item'><img src={capy2} alt='capy 2'></img></div>
+      <div className='item'><img src={capy3} alt='capy 3'></img></div>
     </Carousel>
   );
 }
